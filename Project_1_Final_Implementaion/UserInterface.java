@@ -16,9 +16,10 @@ public class UserInterface {
     private static final int RECEIVE_SHIPMENT = 8;
     private static final int VIEW_INVOICES = 9;
     private static final int PRINT_WISHLIST = 10;
-    private static final int SAVE = 11;
-    private static final int RETRIEVE = 12;
-    private static final int HELP = 13;
+    private static final int PRINT_WAITLIST = 11;
+    private static final int SAVE = 12;
+    private static final int RETRIEVE = 13;
+    private static final int HELP = 14;
 
     private UserInterface() {
         if (yesOrNo("Look for saved data and use it?")) {
@@ -68,8 +69,8 @@ public class UserInterface {
     }
 
     public void help() {
-        System.out.println("Enter a number between 0 and 13 as explained below:");
-        System.out.println(EXIT + " to Exit\n");
+        System.out.println("Enter a number between 0 and 14 as explained below:");
+        System.out.println(EXIT + " to Exit");
         System.out.println(ADD_CLIENT + " to add a client");
         System.out.println(ADD_PRODUCT + " to add a product");
         System.out.println(VIEW_CLIENTS + " to view all clients");
@@ -79,7 +80,8 @@ public class UserInterface {
         System.out.println(RECEIVE_PAYMENT + " to record a payment for a client");
         System.out.println(RECEIVE_SHIPMENT + " to receive a product shipment");
         System.out.println(VIEW_INVOICES + " to view all invoices for a client");
-        System.out.println(PRINT_WISHLIST + " to print a client's wishlist"); 
+        System.out.println(PRINT_WISHLIST + " to print a client's wishlist");
+        System.out.println(PRINT_WAITLIST + " to view a product's waitlist");
         System.out.println(SAVE + " to save data");
         System.out.println(RETRIEVE + " to retrieve data");
         System.out.println(HELP + " for help");
@@ -154,23 +156,46 @@ public class UserInterface {
         System.out.println(result);
     }
 
+    public void receiveShipment() {
+        String productID = getToken("Enter product ID");
+        int quantity = getNumber("Enter shipment quantity");
+        String result = warehouse.receiveShipment(productID, quantity);
+        System.out.println(result);
+    }
+
     public void viewInvoices() {
         String clientID = getToken("Enter client ID");
         warehouse.printInvoices(clientID);
     }
 
-    public void printWishlist() { 
+    public void printWishlist() {
         String clientID = getToken("Enter client ID");
         Client client = warehouse.getClientById(clientID);
-        if (client == null) {
+        if (client != null) {
+            List<Product> wishlist = client.getWishList();
+            if (wishlist.isEmpty()) {
+                System.out.println("Wishlist is empty.");
+            } else {
+                System.out.println("Wishlist for client " + clientID + ":");
+                for (Product product : wishlist) {
+                    System.out.println(product);
+                }
+            }
+        } else {
             System.out.println("Client not found.");
-            return;
         }
+    }
 
-        List<Product> wishlist = client.getWishList();
-        System.out.println("Wishlist for client " + clientID + ":");
-        for (Product product : wishlist) {
-            System.out.println(product);
+    public void printWaitlist() {
+        String productID = getToken("Enter product ID");
+        List<Client> waitlist = warehouse.getWaitlistForProduct(productID);
+        if (waitlist.isEmpty()) {
+            System.out.println("No clients on the waitlist for product " + productID);
+        } else {
+            System.out.println("Waitlist for product " + productID + ":");
+            for (Client client : waitlist) {
+                System.out.println(client);
+            }
         }
     }
 
@@ -236,16 +261,16 @@ public class UserInterface {
                     receivePayment();
                     break;
                 case RECEIVE_SHIPMENT:
-                    String productID = getToken("Enter product ID");
-                    int quantity = getNumber("Enter shipment quantity");
-                    String result = warehouse.receiveShipment(productID, quantity);
-                    System.out.println(result);
+                    receiveShipment();
                     break;
                 case VIEW_INVOICES:
                     viewInvoices();
                     break;
-                case PRINT_WISHLIST: 
+                case PRINT_WISHLIST:
                     printWishlist();
+                    break;
+                case PRINT_WAITLIST:
+                    printWaitlist();
                     break;
                 case SAVE:
                     save();
@@ -266,4 +291,3 @@ public class UserInterface {
         UserInterface.instance().process();
     }
 }
-
