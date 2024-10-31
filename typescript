@@ -1,0 +1,480 @@
+Script started on 2024-10-31 04:37:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="159" LINES="11"]
+👋 Welcome to Codespaces! You are on our default image. 
+   - It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://aka.ms/ghcs-default-image
+   - Want to use a custom image instead? Learn more here: https://aka.ms/configure-codespace
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
+
+[0;32m@Zero7645 [0m➜ [1;34m/workspaces/project1final-Zero7645 [0;36m([1;31mmain[0;36m) [0m$ cd Project_1_Final_Implementaion/
+[0;32m@Zero7645 [0m➜ [1;34m/workspaces/project1final-Zero7645/Project_1_Final_Implementaion [0;36m([1;31mmain[0;36m) [0m$ javac *.java
+Note: Client.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[0;32m@Zero7645 [0m➜ [1;34m/workspaces/project1final-Zero7645/Project_1_Final_Implementaion [0;36m([1;31mmain[0;36m) [0m$ java UserInterface [K
+Look for saved data and use it? (Y|y)[es] or anything else for no
+n
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+1
+Enter client first name
+Test1
+Enter client last name
+sad
+Enter client address
+11
+Enter client phone
+231
+Client added: 	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $0.00
+Enter command (type 13 for help): 
+1
+Enter client first name
+Test2
+Enter client last name
+sad' 
+Enter client address
+12
+Enter client phone
+321
+Client added: 	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $0.00
+Enter command (type 13 for help): 
+1
+Enter client first name
+Test3
+Enter client last name
+asad
+Enter client address
+qwe
+Enter client phone
+afd   3242
+Client added: 	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+Enter command (type 13 for help): 
+1
+Enter client first name
+Test2 3 4
+Enter client last name
+asd
+Enter client address
+asdg
+Enter client phone
+2634
+Client added: 	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+Enter command (type 13 for help): 
+1
+Enter client first name
+Test4 5
+Enter client last name
+adsf
+Enter client address
+asde
+Enter client phone
+356
+Client added: 	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+2 3
+
+Clients:
+	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $0.00
+	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $0.00
+	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+2
+Enter product name
+Prod1
+Enter product price
+11
+Enter product quantity
+12
+Product added: Product name: Prod1, ID: P1, Price: 11.0, Stock: 12, Waitlisted: 0
+Enter command (type 13 for help): 
+2
+Enter product name
+Prod2
+Enter product price
+100
+Enter product quantity
+3
+Product added: Product name: Prod2, ID: P2, Price: 100.0, Stock: 3, Waitlisted: 0
+Enter command (type 13 for help): 
+2
+Enter product name
+Prod3
+Enter product price
+3246
+Enter product quantity
+243635
+Product added: Product name: Prod3, ID: P3, Price: 3246.0, Stock: 243635, Waitlisted: 0
+Enter command (type 13 for help): 
+2
+Enter product name
+Prod4
+Enter product price
+31251246
+Enter product quantity
+1
+Product added: Product name: Prod4, ID: P4, Price: 3.1251246E7, Stock: 1, Waitlisted: 0
+Enter command (type 13 for help): 
+2
+Enter product name
+Prod5
+Enter product price
+12
+Enter product quantity
+2346
+Product added: Product name: Prod5, ID: P5, Price: 12.0, Stock: 2346, Waitlisted: 0
+Enter command (type 13 for help): 
+4
+
+Products:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 12, Waitlisted: 0
+Product name: Prod2, ID: P2, Price: 100.0, Stock: 3, Waitlisted: 0
+Product name: Prod3, ID: P3, Price: 3246.0, Stock: 243635, Waitlisted: 0
+Product name: Prod4, ID: P4, Price: 3.1251246E7, Stock: 1, Waitlisted: 0
+Product name: Prod5, ID: P5, Price: 12.0, Stock: 2346, Waitlisted: 0
+Enter command (type 13 for help): 
+5
+Enter client ID
+C1
+Enter product ID
+P1
+Enter quantity
+5
+Product added to wishlist.
+Enter command (type 13 for help): 
+5
+Enter client ID
+C1
+Enter product ID
+P3
+Enter quantity
+5
+Product added to wishlist.
+Enter command (type 13 for help): 
+5
+Enter client ID
+C1
+Enter product ID
+P5
+Enter quantity
+5
+Product added to wishlist.
+Enter command (type 13 for help): 
+13
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+10
+Enter client ID
+C1
+Wishlist for client C1:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 12, Waitlisted: 0
+Product name: Prod3, ID: P3, Price: 3246.0, Stock: 243635, Waitlisted: 0
+Product name: Prod5, ID: P5, Price: 12.0, Stock: 2346, Waitlisted: 0
+Enter command (type 13 for help): 
+5
+Enter client ID
+C2
+Enter product ID
+P1
+Enter quantity
+6 7
+Product added to wishlist.
+Enter command (type 13 for help): 
+5
+Enter client ID
+C2
+Enter product ID
+P2
+Enter quantity
+7
+Product added to wishlist.
+Enter command (type 13 for help): 
+5
+Enter client ID
+C2
+Enter product ID
+P4
+Enter quantity
+7
+Product added to wishlist.
+Enter command (type 13 for help): 
+13
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+10
+Enter client ID
+C2
+Wishlist for client C2:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 12, Waitlisted: 0
+Product name: Prod2, ID: P2, Price: 100.0, Stock: 3, Waitlisted: 0
+Product name: Prod4, ID: P4, Price: 3.1251246E7, Stock: 1, Waitlisted: 0
+Enter command (type 13 for help): 
+5
+Enter client ID
+C3
+Enter product ID
+P1
+Enter quantity
+6
+Product added to wishlist.
+Enter command (type 13 for help): 
+5
+Enter client ID
+C3
+Enter product ID
+P2
+Enter quantity
+6
+Product added to wishlist.
+Enter command (type 13 for help): 
+5C 
+Enter client ID
+C1
+Enter product ID
+P5
+Enter quantity
+6
+Product added to wishlist.
+Enter command (type 13 for help): 
+10
+Enter client ID
+C3
+Wishlist for client C3:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 12, Waitlisted: 0
+Product name: Prod2, ID: P2, Price: 100.0, Stock: 3, Waitlisted: 0
+Enter command (type 13 for help): 
+6
+Enter client ID
+C2
+Order processed for Test2 sad:
+- Prod1 (P1): $11.00
+- Prod2 (P2): $100.00
+- Prod4 (P4): $31251246.00
+
+Total cost: $31251678.00
+New balance: $-31251678.00
+WARNING: Account balance is negative. Please add funds to your account.
+Enter command (type 13 for help): 
+3
+
+Clients:
+	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $0.00
+	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $-31251678.00
+	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+10
+Enter client ID
+C2
+Wishlist for client C2:
+Enter command (type 13 for help): 
+10
+Enter client ID
+C3
+Wishlist for client C3:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 0, Waitlisted: 0
+Product name: Prod2, ID: P2, Price: 100.0, Stock: 0, Waitlisted: 0
+Enter command (type 13 for help): 
+13
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+6
+Enter client ID
+C1
+Order processed for Test1 sad:
+- Prod1 (P1): Out of stock
+- Prod3 (P3): $3246.00
+- Prod5 (P5): $12.00
+- Prod5 (P5): Out of stock
+
+Total cost: $790867362.00
+New balance: $-790867392.00
+WARNING: Account balance is negative. Please add funds to your account.
+Enter command (type 13 for help): 
+3
+
+Clients:
+	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $-790867392.00
+	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $-31251678.00
+	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+10
+Enter client ID
+C1
+Wishlist for client C1:
+Enter command (type 13 for help): 
+7
+Enter client ID
+C1
+Enter payment amount
+100
+Payment of $100.00 received. Updated balance: $-790867264.00
+Enter command (type 13 for help): 
+7
+Enter client ID
+C2
+Enter payment amount
+100
+Payment of $100.00 received. Updated balance: $-31251578.00
+Enter command (type 13 for help): 
+3
+
+Clients:
+	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $-790867264.00
+	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $-31251578.00
+	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+13
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+8
+Enter product ID
+P1
+Enter shipment quantity
+100
+Shipment received. Stock updated to 100
+Enter command (type 13 for help): 
+8
+Enter product ID
+P2
+Enter shipment quantity
+100
+Shipment received. Stock updated to 100
+Enter command (type 13 for help): 
+4
+
+Products:
+Product name: Prod1, ID: P1, Price: 11.0, Stock: 100, Waitlisted: 0
+Product name: Prod2, ID: P2, Price: 100.0, Stock: 100, Waitlisted: 0
+Product name: Prod3, ID: P3, Price: 3246.0, Stock: 0, Waitlisted: 0
+Product name: Prod4, ID: P4, Price: 3.1251246E7, Stock: 0, Waitlisted: 0
+Product name: Prod5, ID: P5, Price: 12.0, Stock: 0, Waitlisted: 0
+Enter command (type 13 for help): 
+3
+
+Clients:
+	C1 Test1sad, ID: C1, Address: 11, Phone Number: 231 $-790867264.00
+	C2 Test2sad, ID: C2, Address: 12, Phone Number: 321 $-31251578.00
+	C3 Test3asad, ID: C3, Address: qwe, Phone Number: 3242 $0.00
+	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
+	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
+Enter command (type 13 for help): 
+13
+Enter a number between 0 and 13 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add a product
+3 to view all clients
+4 to view all products
+5 to add products to a client's wishlist
+6 to place an order for a client
+7 to record a payment for a client
+8 to receive a product shipment
+9 to view all invoices for a client
+10 to print a client's wishlist
+11 to save data
+12 to retrieve data
+13 for help
+Enter command (type 13 for help): 
+9
+Enter client ID
+C1
+Invoices for client C1:
+Transaction details: Payment received: $100.00
+Enter command (type 13 for help): 
+9
+Enter client ID
+C2
+Invoices for client C2:
+Transaction details: Payment received: $100.00
+Enter command (type 13 for help): 
+exit
+Please enter a valid number.
+Enter command (type 13 for help): 
+0
+[0;32m@Zero7645 [0m➜ [1;34m/workspaces/project1final-Zero7645/Project_1_Final_Implementaion [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2024-10-31 04:45:28+00:00 [COMMAND_EXIT_CODE="0"]
