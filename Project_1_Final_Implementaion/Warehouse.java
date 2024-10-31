@@ -43,6 +43,11 @@ public class Warehouse implements Serializable {
         return clientList.getClients();
     }
 
+    // Get the waitlist for a specific product
+    public List<Client> getWaitlistForProduct(String productID) {
+        Product product = productList.getProductById(productID);
+        return (product != null) ? product.getWaitlistedQuantity() : new ArrayList<>();
+    }    
    
     public Client getClientById(String clientID) {
         return clientList.findClientById(clientID);
