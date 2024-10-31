@@ -14,7 +14,7 @@ Note: Recompile with -Xlint:unchecked for details.
 [0;32m@Zero7645 [0m➜ [1;34m/workspaces/project1final-Zero7645/Project_1_Final_Implementaion [0;36m([1;31mmain[0;36m) [0m$ java UserInterface [K
 Look for saved data and use it? (Y|y)[es] or anything else for no
 n
-Enter a number between 0 and 13 as explained below:
+Enter a number between 0 and 14 as explained below:
 0 to Exit
 
 1 to add a client
@@ -27,10 +27,11 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
-Enter command (type 13 for help): 
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+Enter command (type 14 for help): 
 1
 Enter client first name
 Test1
@@ -176,7 +177,7 @@ Enter quantity
 5
 Product added to wishlist.
 Enter command (type 13 for help): 
-13
+14
 Enter a number between 0 and 13 as explained below:
 0 to Exit
 
@@ -190,10 +191,11 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
-Enter command (type 13 for help): 
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+Enter command (type 14 for help): 
 10
 Enter client ID
 C1
@@ -229,8 +231,8 @@ Enter quantity
 7
 Product added to wishlist.
 Enter command (type 13 for help): 
-13
-Enter a number between 0 and 13 as explained below:
+14
+Enter a number between 0 and 14 as explained below:
 0 to Exit
 
 1 to add a client
@@ -243,10 +245,11 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
-Enter command (type 13 for help): 
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+Enter command (type 14 for help): 
 10
 Enter client ID
 C2
@@ -336,9 +339,29 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+
+Enter command (type 13 for help): 
+11
+
+Enter product ID:
+P1
+
+Waitlist for product P1:
+6
+
+Enter command (type 13 for help): 
+11
+
+Enter product ID:
+P2
+
+Waitlist for product P2:
+10
+
 Enter command (type 13 for help): 
 6
 Enter client ID
@@ -390,7 +413,7 @@ Clients:
 	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
 	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
 Enter command (type 13 for help): 
-13
+14
 Enter a number between 0 and 13 as explained below:
 0 to Exit
 
@@ -404,10 +427,11 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
-Enter command (type 13 for help): 
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+Enter command (type 14 for help): 
 8
 Enter product ID
 P1
@@ -440,7 +464,7 @@ Clients:
 	C4 Test4asd, ID: C4, Address: asdg, Phone Number: 2634 $0.00
 	C5 Test5adsf, ID: C5, Address: asde, Phone Number: 356 $0.00
 Enter command (type 13 for help): 
-13
+14
 Enter a number between 0 and 13 as explained below:
 0 to Exit
 
@@ -454,10 +478,11 @@ Enter a number between 0 and 13 as explained below:
 8 to receive a product shipment
 9 to view all invoices for a client
 10 to print a client's wishlist
-11 to save data
-12 to retrieve data
-13 for help
-Enter command (type 13 for help): 
+11 to view a product's waitlist
+12 to save data
+13 to retrieve data
+14 for help
+Enter command (type 14 for help): 
 9
 Enter client ID
 C1
