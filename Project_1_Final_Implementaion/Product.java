@@ -24,6 +24,10 @@ public class Product implements Serializable {
         return productID;
     }
 
+    public int getWaitlistedQuantity() {
+        return waitlistedQuantity;
+    }
+
     public double getPrice() {
         return price;
     }
@@ -32,30 +36,12 @@ public class Product implements Serializable {
         return quantity;
     }
 
-    public int getWaitlistedQuantity() {
-        return waitlistedQuantity;
-    }
-
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 
-    public void addToWaitlist(int quantity) {
-        this.waitlistedQuantity += quantity;
-    }
-
-    public void fillWaitlist(int receivedQuantity) {
-        if (waitlistedQuantity > 0) {
-            int fulfilled = Math.min(waitlistedQuantity, receivedQuantity);
-            waitlistedQuantity -= fulfilled;
-            this.quantity += receivedQuantity - fulfilled;
-        } else {
-            this.quantity += receivedQuantity;
-        }
-    }
-
     @Override
     public String toString() {
-        return "Product name: " + name + ", ID: " + productID + ", Price: " + price + ", Stock: " + quantity + ", Waitlisted: " + waitlistedQuantity;
+        return "Product name: " + name + ", ID: " + productID + ", Price: " + price + ", Quantity: " + quantity;
     }
 }
